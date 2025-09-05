@@ -13,8 +13,7 @@ const projects = [
   {
     id: 2,
     title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform and payment processing.",
+    description: "Full-featured e-commerce platform and payment processing.",
     image: "/ecopho.png",
     tags: ["Typescript", "Node.js", "Stripe"],
     demoUrl: "https://eco-lek7.vercel.app",
@@ -23,8 +22,7 @@ const projects = [
   {
     id: 3,
     title: "Portfolio",
-    description:
-      "My Beatifull portfolio.",
+    description: "My Beatifull portfolio.",
     image: "/porto.png",
     tags: ["React.js", "Vite", "Tailwind"],
     demoUrl: "https://porto-lilac-omega.vercel.app/",
@@ -47,12 +45,10 @@ export const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <a
+            <div
               key={project.id}
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block cursor-pointer"
+              onClick={() => window.open(project.demoUrl, "_blank")}
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -101,7 +97,7 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
@@ -119,4 +115,3 @@ export const ProjectsSection = () => {
     </section>
   );
 };
-
