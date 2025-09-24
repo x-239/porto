@@ -54,9 +54,9 @@ const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:Abdulnour_Abdulrhman@outlook.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     Abdulnour_Abdulrhman@outlook.com
@@ -68,9 +68,9 @@ const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+962797743569"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +962 7 97743569
@@ -113,7 +113,7 @@ const ContactSection = () => {
             className="bg-card p-8 rounded-lg shadow-xs"
             onSubmit={handleSubmit}
           >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form className="space-y-6">
               <div>
@@ -148,7 +148,7 @@ const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="example@gmail.com"
                 />
               </div>
 

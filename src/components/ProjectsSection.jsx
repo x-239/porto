@@ -21,12 +21,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Portfolio",
-    description: "My Beatifull portfolio.",
-    image: "/porto.png",
-    tags: ["React.js", "Vite", "Tailwind"],
-    demoUrl: "https://porto-lilac-omega.vercel.app/",
-    githubUrl: "https://github.com/x-239/ecommerce-ui",
+    title: "Waslh",
+    description: "A website for foreign medical services with and Active Contact foarm.",
+    image: "/waslhImage.png",
+    tags: ["Next.Js", "Typescript", "Tailwind"],
+    demoUrl: "https://mmm-smoky-six.vercel.app/",
+    githubUrl: "https://github.com/x-239/MMM.git",
   }
 ];
 
