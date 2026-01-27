@@ -29,7 +29,7 @@ const Navbar = () => {
         return ()=>window.removeEventListener("scroll", handleScroll)
     },[])
   return (
-      <nav className={cn("fixed w-full z-40 transition-all duration-300",
+      <nav className={cn("fixed w-full z-40 transition-all duration-300 sm:px-8 md:px-0 lg:px-0",
           isScrolled ? 'py-3 bg-background/80 backdrop:backdrop-blur-md shadow-xs' : "py-5"
       )}>
           <div className=" container flex items-center justify-between ">
@@ -39,7 +39,7 @@ const Navbar = () => {
                   </span>
               </a>
               {/* DESKTOP nav */}
-              <div className="hidden md:flex space-x-8">
+              <div className="hidden md:flex space-x-8 pr-4">
                   {navItems.map((item, key) => (
                       <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition duration-500'>{item.name}</a>
                   ))}
