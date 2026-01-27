@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: 'BlossomCandy store',
     description:
-      'Blossom candy is a full-stack website,fully responsive ready to work!',
+      'Blossom candy is a scalable full-stack e-commerce platform under active development, the first phase focuses on building well-strucutred fronted the next phase will be Backend API, Auth and authrization, admin dashboard, order and payment management',
     image: '/mycandystore.png',
     tags: ['Next.Js', 'Typescript', 'Tailwind'],
     demoUrl: 'https://blossom-vkle.vercel.app/',
