@@ -1,34 +1,45 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
     id: 1,
-    title: "Dashboard Fully Responsive",
-    description: "A full Dashborad using shadcn elements.",
-    image: "/dash.png",
-    tags: ["Typescript", "TailwindCSS"],
-    demoUrl: "https://dash-project-lime.vercel.app/",
-    githubUrl: "https://github.com/x-239/dashboard",
+    title: 'Dashboard Fully Responsive',
+    description: 'A full Dashborad using shadcn elements.',
+    image: '/dash.png',
+    tags: ['Typescript', 'TailwindCSS'],
+    demoUrl: 'https://dash-project-lime.vercel.app/',
+    githubUrl: 'https://github.com/x-239/dashboard',
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    description: "Full-featured e-commerce platform and payment processing.",
-    image: "/ecopho.png",
-    tags: ["Typescript", "Node.js", "Stripe"],
-    demoUrl: "https://eco-lek7.vercel.app",
-    githubUrl: "https://github.com/x-239/ecommerce-ui",
+    title: 'E-commerce Platform',
+    description: 'Full-featured e-commerce platform and payment processing.',
+    image: '/ecopho.png',
+    tags: ['Typescript', 'Node.js', 'Stripe'],
+    demoUrl: 'https://eco-lek7.vercel.app',
+    githubUrl: 'https://github.com/x-239/ecommerce-ui',
   },
   {
     id: 3,
-    title: "Waslh",
-    description: "A website for foreign medical services with and Active Contact foarm.",
-    image: "/waslhImage.png",
-    tags: ["Next.Js", "Typescript", "Tailwind"],
-    demoUrl: "https://mmm-smoky-six.vercel.app/",
-    githubUrl: "https://github.com/x-239/MMM.git",
-  }
-];
+    title: 'Waslh',
+    description:
+      'A website for foreign medical services with and Active Contact foarm.',
+    image: '/waslhImage.png',
+    tags: ['Next.Js', 'Typescript', 'Tailwind'],
+    demoUrl: 'https://mmm-smoky-six.vercel.app/',
+    githubUrl: 'https://github.com/x-239/MMM.git',
+  },
+  {
+    id: 4,
+    title: 'BlossomCandy store',
+    description:
+      'Blossom candy is a full-stack website,fully responsive ready to work!',
+    image: '/mycandystore.png',
+    tags: ['Next.Js', 'Typescript', 'Tailwind'],
+    demoUrl: 'https://blossom-vkle.vercel.app/',
+    githubUrl: 'https://github.com/x-239/blossom.git',
+  },
+]
 
 export const ProjectsSection = () => {
   return (
@@ -47,14 +58,14 @@ export const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block cursor-pointer"
-              onClick={() => window.open(project.demoUrl, "_blank")}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs cursor-pointer"
+              onClick={() => window.open(project.demoUrl, '_blank')}
             >
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
@@ -108,10 +119,10 @@ export const ProjectsSection = () => {
             rel="noopener noreferrer"
             href="https://github.com/x-239"
           >
-            Check My Github <ArrowRight size={16} />
+            Check My Github <ArrowRight size={20} />
           </a>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
